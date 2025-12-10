@@ -73,3 +73,41 @@ body {
     height: 85px;
     /* Tamanho da logo */
 }
+
+/* NAV / MENU SUPERIOR */
+.navigation {
+    justify-self: center;               /* Centraliza o menu no topo */
+    display: flex;                      /* Itens lado a lado */
+    gap: 60px;                          /* Espaçamento entre links */
+}
+
+.navigation a {
+    color: var(--branco);               /* Cor do texto */
+    text-decoration: none;              /* Remove sublinhado */
+    font-size: 1.2rem;                  /* Tamanho da fonte */
+    font-weight: 600;                   /* Negrito moderado */
+    transition: 0.3s;                   /* Animação suave */
+    position: relative;                 /* Necessário para o underline animado */
+}
+
+/* Linha azul animada */
+.navigation a::after {
+    content: "";                        /* Cria elemento vazio */
+    position: absolute;                 /* Embaixo do texto */
+    width: 0%;                           /* Começa invisível */
+    height: 3px;
+    background: var(--azul);            /* Cor da linha */
+    bottom: -5px;                       /* Distância do texto */
+    left: 0;
+    transition: 0.3s;                   /* Animação suave */
+}
+
+/* Linha aparece somente ao passar o mouse */
+.navigation a:hover::after {
+    width: 100%;
+}
+
+/* Remove underline fixo de "Home" */
+.navigation a.active::after {
+    width: 0 !important;
+}

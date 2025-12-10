@@ -113,3 +113,39 @@ body {
     max-width: 60%;        
     height: auto;         
 }
+
+/*  CARDS DE SERVIÇOS  */
+
+.box-conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: var(--cinza);          
+    padding: 25px;
+    width: 370px;
+    border-radius: 15px;
+    border: 1px solid #ffffff15;        
+    box-shadow: 0 0 12px #55c7ff1a;    
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #55c7ff40;     
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    color: var(--azul);                 
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

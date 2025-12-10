@@ -6,3 +6,21 @@
 --branco: #ffffff;
 
 }
+
+/* RESET GERAL */
+* {
+    margin: 0;                 /* Remove margens padrão */
+    padding: 0;                /* Remove espaçamentos internos */
+    box-sizing: border-box;    /* Inclui bordas dentro das medidas */
+    font-family: "Poppins", sans-serif;   /* Fonte padrão */
+}
+
+html {
+    scroll-behavior: smooth;   /* Rolagem suave */
+}
+
+body {
+    background: var(--preto);  /* Cor de fundo */
+    color: var(--branco);      /* Cor padrão do texto */
+}
+

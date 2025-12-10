@@ -10,115 +10,155 @@
 /* RESET GERAL */
 * {
     margin: 0;
-    /* Remove margens padrão */
     padding: 0;
-    /* Remove espaçamentos internos */
     box-sizing: border-box;
-    /* Inclui bordas dentro das medidas */
     font-family: "Poppins", sans-serif;
-    /* Fonte padrão */
 }
 
 html {
     scroll-behavior: smooth;
-    /* Rolagem suave */
 }
 
 body {
     background: var(--preto);
-    /* Cor de fundo */
     color: var(--branco);
-    /* Cor padrão do texto */
 }
 
 /*HEADER (fixo no topo) */
 .header {
     background: var(--cinza);
-    /* Cor do cabeçalho */
     width: 100%;
-    /*  largura total */
     position: fixed;
-    /* fica preso no topo */
     top: 0;
-    /* Encostado no topo */
     z-index: 999;
-    /* Fica acima de tudo */
     padding: 10px 0;
-    /* Espaçamento interno */
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    /* Linha discreta */
 }
 
-/* Container do header com layout centralizado */
 .header-container {
     width: 90%;
-    /* Largura interna */
     margin: auto;
-    /* Centraliza horizontalmente */
     display: grid;
-    /* Grid para centralizar nav */
     grid-template-columns: 1fr auto 1fr;
-    /* Logo / Nav / área vazia */
     align-items: center;
-    /* Centraliza verticalmente */
 }
 
-/* Área da logo */
 .logo-area {
     justify-self: start;
-    /* Fica no canto esquerdo */
 }
 
 .logo-area img {
     height: 85px;
-    /* Tamanho da logo */
 }
 
-/* NAV / MENU SUPERIOR */
+/* NAV */
 .navigation {
-    justify-self: center;               /* Centraliza o menu no topo */
-    display: flex;                      /* Itens lado a lado */
-    gap: 60px;                          /* Espaçamento entre links */
+    justify-self: center;
+    display: flex;
+    gap: 60px;
 }
 
 .navigation a {
-    color: var(--branco);               /* Cor do texto */
-    text-decoration: none;              /* Remove sublinhado */
-    font-size: 1.2rem;                  /* Tamanho da fonte */
-    font-weight: 600;                   /* Negrito moderado */
-    transition: 0.3s;                   /* Animação suave */
-    position: relative;                 /* Necessário para o underline animado */
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
 }
 
-/* Linha azul animada */
 .navigation a::after {
-    content: "";                        /* Cria elemento vazio */
-    position: absolute;                 /* Embaixo do texto */
-    width: 0%;                           /* Começa invisível */
+    content: "";
+    position: absolute;
+    width: 0%;
     height: 3px;
-    background: var(--azul);            /* Cor da linha */
-    bottom: -5px;                       /* Distância do texto */
+    background: var(--azul);
+    bottom: -5px;
     left: 0;
-    transition: 0.3s;                   /* Animação suave */
+    transition: 0.3s;
 }
 
-/* Linha aparece somente ao passar o mouse */
 .navigation a:hover::after {
     width: 100%;
 }
 
-/* Remove underline fixo de "Home" */
 .navigation a.active::after {
     width: 0 !important;
 }
 
-/*SEÇÕES GERAIS */
+/*SEÇÕES */
 .section {
     padding: 150px 0;
     text-align: center;
 }
 
-/* Container principal do rodapé */
+/* --- INÍCIO DO BLOCO HOME --- */
+.home {
+    width: 100%;
+    padding-top: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.home-left {
+    width: 50%;
+}
+
+.home-left h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.home-left h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.home-left h1 span {
+    color: var(--azul);
+}
+
+.home-left p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.bnt {
+    margin-top: 20px;
+    display: inline-block;
+    background: var(--azul);
+    color: var(--preto);
+    padding: 12px 25px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.bnt:hover {
+    opacity: 0.8;
+}
+
+.home-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-right img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+/* --- FIM DO BLOCO HOME --- */
+
+/* RODAPÉ */
 .footer {
     width: 100%;
     background: var(--cinza);
@@ -126,13 +166,12 @@ body {
     padding: 50px 0;
 }
 
-/* AQUI é onde estava o problema */
 .footer-container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
 
-    display: flex;                /* coloca lado a lado */
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
@@ -140,13 +179,11 @@ body {
     padding: 0 40px;
 }
 
-/* Cada coluna */
 .footer-box {
     width: 25%;
     min-width: 200px;
 }
 
-/* Títulos */
 .footer-box h3 {
     font-size: 1.6rem;
     margin-bottom: 12px;
@@ -157,7 +194,6 @@ body {
     color: var(--azul);
 }
 
-/* Links */
 .footer-box a {
     display: block;
     color: var(--branco);
@@ -170,13 +206,11 @@ body {
     color: var(--azul);
 }
 
-/* Textos */
 .footer-box p {
     color: var(--branco);
     margin: 6px 0;
 }
 
-/* Copyright */
 .copy {
     text-align: center;
     padding: 20px 0;

@@ -30,8 +30,8 @@ h1 {
     transform: translateY(-8px);
 }
 
-.quem h2 {
-    color: #8ffbff;
+.quem h3 {
+    color: #004aad;
     margin-bottom: 15px;
     font-size: 1.6;
 }
@@ -55,8 +55,8 @@ h1 {
     transform: translateY(-8px);
 }
 
-.missao h2 {
-    color: #8ffbff;
+.missao h3 {
+    color: #004aad;
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
@@ -80,8 +80,8 @@ h1 {
     transform: translateY(-8px);
 }
 
-.visao h2 {
-    color: #8ffbff;
+.visao h3 {
+    color: #004aad;
     margin-bottom: 15px;
     font-size: 1.3rem;
 }

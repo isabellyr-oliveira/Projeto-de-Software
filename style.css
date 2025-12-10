@@ -168,3 +168,21 @@ body {
 .bnt:hover {
     background: #1aa7e0;
 }
+
+
+/*  IMAGENS RESPONSIVAS  */
+
+.img-responsive {
+    max-width: 100%;       
+    height: auto;          
+    display: block;
+}
+
+
+.box img {
+    width: 100%;           
+    max-width: 180px;      
+    height: auto;
+    margin: 0 auto 15px;   
+    display: block;
+}

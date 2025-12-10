@@ -47,3 +47,25 @@ body {
     height: 85px;
 }
 
+/*  NAVBAR  */
+
+.barra_navegação {
+    display: flex;
+    align-items: center;              
+    justify-content: center;        
+    gap: 35px;                        
+}
+
+.barra_navegação a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.2rem;               
+    font-weight: 600;
+    transition: 0.3s;
+    padding: 4px 0;                   
+}
+
+.barra_navegação a:hover {
+    color: var(--azul);               
+    text-decoration: underline;
+}

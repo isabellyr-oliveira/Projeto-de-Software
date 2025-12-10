@@ -1,26 +1,75 @@
 /*Cores padrão do site*/
 :root {
---preto: #0d0d0d;
---cinza: #1a1a1a; 
---azul: #55c7ff;
---branco: #ffffff;
+    --preto: #0d0d0d;
+    --cinza: #1a1a1a;
+    --azul: #55c7ff;
+    --branco: #ffffff;
 
 }
 
 /* RESET GERAL */
 * {
-    margin: 0;                 /* Remove margens padrão */
-    padding: 0;                /* Remove espaçamentos internos */
-    box-sizing: border-box;    /* Inclui bordas dentro das medidas */
-    font-family: "Poppins", sans-serif;   /* Fonte padrão */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove espaçamentos internos */
+    box-sizing: border-box;
+    /* Inclui bordas dentro das medidas */
+    font-family: "Poppins", sans-serif;
+    /* Fonte padrão */
 }
 
 html {
-    scroll-behavior: smooth;   /* Rolagem suave */
+    scroll-behavior: smooth;
+    /* Rolagem suave */
 }
 
 body {
-    background: var(--preto);  /* Cor de fundo */
-    color: var(--branco);      /* Cor padrão do texto */
+    background: var(--preto);
+    /* Cor de fundo */
+    color: var(--branco);
+    /* Cor padrão do texto */
 }
 
+/*HEADER (fixo no topo) */
+.header {
+    background: var(--cinza);
+    /* Cor do cabeçalho */
+    width: 100%;
+    /*  largura total */
+    position: fixed;
+    /* fica preso no topo */
+    top: 0;
+    /* Encostado no topo */
+    z-index: 999;
+    /* Fica acima de tudo */
+    padding: 10px 0;
+    /* Espaçamento interno */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Linha discreta */
+}
+
+/* Container do header com layout centralizado */
+.header-container {
+    width: 90%;
+    /* Largura interna */
+    margin: auto;
+    /* Centraliza horizontalmente */
+    display: grid;
+    /* Grid para centralizar nav */
+    grid-template-columns: 1fr auto 1fr;
+    /* Logo / Nav / área vazia */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+/* Área da logo */
+.logo-area {
+    justify-self: start;
+    /* Fica no canto esquerdo */
+}
+
+.logo-area img {
+    height: 85px;
+    /* Tamanho da logo */
+}

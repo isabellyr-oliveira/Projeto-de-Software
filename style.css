@@ -186,3 +186,17 @@ body {
     margin: 0 auto 15px;   
     display: block;
 }
+
+
+/*  RESPONSIVIDADE  */
+
+@media (max-width: 900px) {
+
+    .barra_navegação a {
+        margin-left: 10px;
+    }
+
+    .box {
+        width: 90%;                     
+    }
+}

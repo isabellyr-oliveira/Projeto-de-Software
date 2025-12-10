@@ -111,3 +111,77 @@ body {
 .navigation a.active::after {
     width: 0 !important;
 }
+
+/*SEÇÕES GERAIS */
+.section {
+    padding: 150px 0;
+    text-align: center;
+}
+
+/* Container principal do rodapé */
+.footer {
+    width: 100%;
+    background: var(--cinza);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 50px 0;
+}
+
+/* AQUI é onde estava o problema */
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;                /* coloca lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 40px;
+    padding: 0 40px;
+}
+
+/* Cada coluna */
+.footer-box {
+    width: 25%;
+    min-width: 200px;
+}
+
+/* Títulos */
+.footer-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.footer-box h3 span {
+    color: var(--azul);
+}
+
+/* Links */
+.footer-box a {
+    display: block;
+    color: var(--branco);
+    text-decoration: none;
+    margin: 6px 0;
+    transition: .3s;
+}
+
+.footer-box a:hover {
+    color: var(--azul);
+}
+
+/* Textos */
+.footer-box p {
+    color: var(--branco);
+    margin: 6px 0;
+}
+
+/* Copyright */
+.copy {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--branco);
+    border-top: 1px solid rgba(255,255,255,0.2);
+}

@@ -22,6 +22,7 @@ html {
 body {
     background: var(--preto);
     color: var(--branco);
+    padding-bottom: 180px; /* evita que o conteúdo fique escondido atrás do rodapé fixo */
 }
 
 /*HEADER (fixo no topo) */
@@ -164,6 +165,11 @@ body {
     background: var(--cinza);
     border-top: 1px solid rgba(255,255,255,0.2);
     padding: 50px 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
 }
 
 .footer-container {

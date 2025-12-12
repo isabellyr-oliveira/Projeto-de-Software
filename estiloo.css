@@ -165,8 +165,8 @@ body {
     background: var(--cinza);
     border-top: 1px solid rgba(255,255,255,0.2);
     padding: 50px 0;
+    margin-top: auto;
 
-    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 900;
@@ -224,4 +224,143 @@ body {
     font-size: 0.9rem;
     color: var(--branco);
     border-top: 1px solid rgba(255,255,255,0.2);
+}
+/* ============================
+   RESPONSIVIDADE TABLET (≤ 1024px)
+   ============================ */
+@media (max-width: 1024px) {
+
+    .navigation {
+        gap: 35px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-left,
+    .home-right {
+        width: 100%;
+    }
+
+    .home-left h1 {
+        font-size: 2.7rem;
+    }
+
+    .home-left p {
+        margin: auto;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 45%;
+    }
+}
+
+/* ============================
+   RESPONSIVIDADE CELULAR GRANDE (≤ 768px)
+   ============================ */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header-container {
+        grid-template-columns: 1fr auto;
+    }
+
+    .logo-area img {
+        height: 70px;
+    }
+
+    /* MENU vira uma coluna */
+    .navigation {
+        gap: 25px;
+    }
+
+    .navigation a {
+        font-size: 1.1rem;
+    }
+
+    /* HOME */
+    .home {
+        padding-top: 140px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-left h1 {
+        font-size: 2.3rem;
+    }
+
+    .home-left p {
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footer-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ============================
+   RESPONSIVIDADE CELULAR PEQUENO (≤ 480px)
+   ============================ */
+@media (max-width: 480px) {
+
+    /* HEADER */
+    .navigation {
+        gap: 15px;
+    }
+
+    .navigation a {
+        font-size: 1rem;
+    }
+
+    .logo-area img {
+        height: 60px;
+    }
+
+    /* HOME */
+    .home-left h1 {
+        font-size: 1.9rem;
+    }
+
+    .home-left h2 {
+        font-size: 1.3rem;
+    }
+
+    .home-left p {
+        font-size: .95rem;
+    }
+
+    .bnt {
+        padding: 10px 20px;
+        font-size: .95rem;
+    }
+
+    /* IMAGEM HOME */
+    .home-right img {
+        max-width: 350px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 35px 0;
+    }
+
+    .footer-box h3 {
+        font-size: 1.4rem;
+    }
 }

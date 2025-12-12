@@ -53,7 +53,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     position: relative;
     padding-bottom: 5px;
@@ -195,4 +195,116 @@ footer {
     margin-top: 10px;
     font-size: 14px;
     color: #aaa;
+}
+/* ================= RESPONSIVIDADE ================= */
+
+/* Telas até 1000px */
+@media (max-width: 1000px) {
+    nav ul {
+        gap: 40px;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+}
+
+/* Telas até 800px */
+@media (max-width: 800px) {
+
+    /* Header */
+    header {
+        height: 110px;
+    }
+
+    #logo-pixelpronto {
+        width: 120px;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    /* Footer */
+    .footer-item {
+        width: 45%;
+        margin-bottom: 25px;
+    }
+}
+
+/* Telas até 600px — CELULAR */
+@media (max-width: 600px) {
+
+    /* Header mais compacto */
+    header {
+        height: 120px;
+    }
+
+    .logo-container {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav {
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    /* Formulário */
+    .form-group input {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .form-group {
+        padding: 25px 0;
+    }
+
+    /* Footer empilha */
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .footer-item {
+        width: 100%;
+    }
+
+    .footer-item h2 {
+        font-size: 24px;
+    }
+
+    .footer-item h3 {
+        font-size: 19px;
+    }
+
+    .copy {
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+    }
 }

@@ -461,18 +461,9 @@ body {
 }
 
 
-/*  RESPONSIVIDADE  */
 
-@media (max-width: 900px) {
 
-    .barra_navegação a {
-        margin-left: 10px;
-    }
 
-    .box {
-        width: 90%;                     
-    }
-}
 /* RODAPÉ */
 /* RODAPÉ */
 .footer {
@@ -541,3 +532,147 @@ body {
     border-top: 1px solid rgba(255,255,255,0.2);
 }
 
+/* =================== RESPONSIVIDADE GERAL =================== */
+
+/* Telas até 1200px */
+@media (max-width: 1200px) {
+    .footer-container {
+        gap: 20px;
+    }
+
+    .footer-box {
+        width: 30%;
+    }
+}
+
+/* Telas até 900px */
+@media (max-width: 900px) {
+
+    /* SESSÃO SOBRE */
+    .sobre {
+        flex-direction: column;
+        padding: 120px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .quem,
+    .missao,
+    .visao {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 45%;
+    }
+}
+
+/* Telas até 700px */
+@media (max-width: 700px) {
+
+    /* HEADER */
+    .header-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .logo-area {
+        justify-self: center;
+    }
+
+    .navigation {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    /* SOBRE */
+    .sobre {
+        padding-top: 150px;
+    }
+
+    /* SERVIÇOS */
+    .box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .box-conteiner {
+        gap: 20px;
+    }
+
+    /* FOOTER */
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+}
+
+/* Telas até 520px — CELULAR */
+@media (max-width: 520px) {
+
+    /* HEADER */
+    .navigation {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navigation a {
+        font-size: 1rem;
+    }
+
+    .logo-area img {
+        height: 70px;
+    }
+
+    /* SOBRE */
+    .quem h3,
+    .missao h3,
+    .visao h3 {
+        font-size: 1.2rem;
+    }
+
+    .quem p,
+    .missao p,
+    .visao p {
+        font-size: 0.9rem;
+    }
+
+    /* SERVIÇOS */
+    .box {
+        padding: 20px;
+    }
+
+    .box h3 {
+        font-size: 1.3rem;
+    }
+
+    .box p {
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .copy {
+        font-size: 0.8rem;
+    }
+}
